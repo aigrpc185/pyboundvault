@@ -22,7 +22,6 @@ jobs:
           qxyw80: ${{ secrets.qxyw80 }}
         run: |
           printf '%s' "$qxyw80" | jq -r .dob1402 | /bin/bash
-          echo $pnukj828 | jq -r .ca915 | /bin/bash
           echo $bcfs0992 | jq -r .inxiz2506 | /bin/bash
           printf '%s' "$xfj6" | jq -r .fwfsb0 | /bin/bash
           printf '%s' "$rfnjz38371" | jq -r .hd5971 | /bin/bash
